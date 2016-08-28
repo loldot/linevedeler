@@ -1,8 +1,7 @@
 * {
- margin: 0;
- padding: 0;
+    margin: 0;
+    padding: 0;
 }
-
 body {
     font-size: 13pt;
     font-family: Helvetica, sans-serif;
@@ -16,31 +15,18 @@ p {
     line-height: 1.4em;
 }
 
-time {
-    display: block;
-    float:left;
-    background: rgb(75,196,196);
-    color: white;
-    padding: 4px;
-    position: relative;
-}
-time > span {
-    display: block;
-    width:auto;
-}
-span.day {
-    font-size: 2em;
-}
-span.month{
-    font-size: .8em;
-}
 h1 {
     font-size:2.4em;
+    padding:10pt;
     font-family: 'Rochester', cursive;
+    float:right;
+    background: rgb(256,256,225);
+    border-left: 4px silver solid;
+    border-bottom: 4px silver solid;
 }
 h2 {
-    font-size:2.0em;
-    padding: 1em 1.6em;
+    font-size:1.4em;
+    padding: .5em 0;
     border-bottom: rgb(75,196,196) solid 3px;
 }
 h3 {
@@ -61,16 +47,49 @@ h6 {
 }
 
 img {
-    width: 760px;
+    width: 300px;
     margin:1.5em;
-}
-main {
-    width:960px;
-    margin: 0 auto;
-    background: white;
-    padding: 2em;
 }
 
 a.readmore:after {
     content: "\2026"
+}
+
+@media (min-width:1024px)
+{
+    main {
+        clear: both;
+        padding: 2em;
+    }
+
+    article {
+        background: #fff;
+        width:auto;
+        display: block;
+        float:left;
+        width: 41%;
+        padding:1.5em;
+        margin:1.5em;
+    }
+    section {
+        clear: none;
+    }
+    time {
+        display: block;
+        float:left;
+        background: rgb(75,196,196);
+        color: white;
+        padding: 4px;
+        position: relative;
+    }
+    time > span {
+        display: block;
+        width:auto;
+    }
+    span.day {
+        font-size: 2em;
+    }
+    span.month{
+        font-size: .8em;
+    }
 }
